@@ -52,29 +52,27 @@
 # print(f'По {b} корабликов сделали Петя и Серёжа')
 # print(f'{a} корабликов сделала Катя')
 
-# n = int(input('Введите номер билета: '))
-# sum1=0
-# sum2=0
-# i = 0
-# for i in range(0, 3):
-#     sum1 = sum1 + n%10
-#     n = n//10
-# for i in range(3, 6):
-#     sum2 = sum2 + n%10
-#     n = n//10
-# i=i+1
-# if sum1==sum2:
-#     print('yes')
-# else:
-#     print('no')
-
-a = int(input('Введите количество долек в длину шоколадки: '))
-b = int(input('Введите количество долек в ширину шоколадки: '))
-c = int(input('Введите, сколько нужно отломить: '))
-if a*b>c:
-    if c%a==0 or c%b==0:
-        print('yes')
-    else:
-        print('no')
+n = (input('Введите номер билета: '))
+sum1=0
+sum2=0
+i = 0
+for i in range(0, 3):
+    sum1 = sum1 + int(n[i])
+for i in range(3, 6):
+    sum2 = sum2 + int(n[i])
+i=i+1
+if sum1==sum2:
+    print('yes')
 else:
     print('no')
+
+# a = int(input('Введите количество долек в длину шоколадки: '))
+# b = int(input('Введите количество долек в ширину шоколадки: '))
+# c = int(input('Введите, сколько нужно отломить: '))
+# if a*b>c:
+#     if c%a==0 or c%b==0:
+#         print('yes')
+#     else:
+#         print('no')
+# else:
+#     print('no')
